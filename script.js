@@ -31,3 +31,16 @@ window.addEventListener('resize', () => {
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
 });
+function setLanguage(lang) {
+    const sections = document.querySelectorAll('[data-lang]');
+    sections.forEach(section => {
+        if (section.getAttribute('data-lang') === lang) {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+}
+
+// 默认显示日语内容
+setLanguage('ja');
