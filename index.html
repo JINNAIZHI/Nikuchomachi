@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>肉球町 - ホテル</title>
+    <title>よこそう肉球町へ</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
@@ -19,15 +19,19 @@
                 <li>
                     <a href="javascript:void(0);">サービス</a>
                     <ul class="dropdown">
-                        <li><a href="#cat-hotel">猫旅館</a></li>
-                        <li><a href="#home-feeding">上门喂养</a></li>
+                        <li><a href="#cat-hotel-1">猫ホテル1号</a></li>
+                        <li><a href="#cat-hotel-2">猫ホテル2号</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0);">日本語</a>
-                    <a href="javascript:void(0);" onclick="setLanguage('en')">English</a>
-                    <a href="javascript:void(0);" onclick="setLanguage('zh')">中文</a>
+                    <a href="javascript:void(0);" class="language-selector">日本語</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0);" onclick="setLanguage('en')">English</a></li>
+                        <li><a href="javascript:void(0);" onclick="setLanguage('zh')">中文</a></li>
+                    </ul>
                 </li>
+                <li><a href="#gallery">ギャラリー</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
             </ul>
         </nav>
     </header>
@@ -40,6 +44,10 @@
         </div>
         <img src="your-image.jpg" alt="猫旅館のイメージ" class="hero-image">
     </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
     <script src="script.js"></script>
 </body>
