@@ -3,96 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日本猫旅館 - Nikuchuomachi</title>
+    <title>猫旅館 - Nikuchuomachi</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <!-- SwiperJS for image slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>日本猫旅館 - Nikuchuomachi</h1>
-        <nav>
-            <ul>
-                <li><a href="#history">歴史</a></li>
+        <nav class="navbar">
+            <a href="#home" class="logo">猫旅館</a>
+            <ul class="nav-links">
+                <li><a href="#about">歴史</a></li>
                 <li><a href="#services">サービス</a></li>
-                <li><a href="#prices">料金</a></li>
+                <li><a href="#pricing">料金</a></li>
                 <li><a href="#reviews">レビュー</a></li>
             </ul>
         </nav>
     </header>
-<header>
-    <h1>日本猫旅館 - Nikuchuomachi</h1>
-    <nav>
-        <ul>
-            <li><a href="#history">歴史</a></li>
-            <li><a href="#services">サービス</a></li>
-            <li><a href="#prices">料金</a></li>
-            <li><a href="#reviews">レビュー</a></li>
-        </ul>
-    </nav>
-    
-    <!-- 语言切换按钮 -->
-    <div id="language-switcher">
-        <button onclick="setLanguage('en')">English</button>
-        <button onclick="setLanguage('ja')">日本語</button>
-        <button onclick="setLanguage('zh')">中文</button>
-    </div>
-</header>
-    <section id="content">
-    <div data-lang="en">
-        <h2>Welcome to Nikuchuomachi!</h2>
-        <p>Welcome to the most special cat hotel in Japan. Here, your cat can enjoy the comfort of home.</p>
-    </div>
-    <div data-lang="ja">
-        <h2>ようこそ！</h2>
-        <p>日本で最も特別な猫旅館へようこそ。ここでは、あなたの猫ちゃんが家のように快適に過ごせます。</p>
-    </div>
-    <div data-lang="zh">
-        <h2>欢迎光临！</h2>
-        <p>欢迎来到日本最特别的猫旅馆。在这里，你的猫咪可以享受如家一般的舒适。</p>
-    </div>
-</section>
-        <h2>ようこそ！</h2>
-        <p>日本で最も特別な猫旅館へようこそ。ここでは、あなたの猫ちゃんが家のように快適に過ごせます。</p>
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="your-image1.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="your-image2.jpg" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="your-image3.jpg" alt="Image 3"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
 
-    <section id="history">
-        <h2>旅館の歴史</h2>
-        <p>猫旅館は10年前に設立され、日本の伝統的なおもてなしと現代の快適さを融合しています。</p>
+    <!-- About Section -->
+    <section id="about">
+        <h2>歴史</h2>
+        <p>猫旅館は日本の伝統とモダンなサービスを融合し、ペットと飼い主に快適な空間を提供しています。</p>
     </section>
 
+    <!-- Services Section -->
     <section id="services">
-        <h2>サービス内容</h2>
-        <ul>
-            <li>猫用ホテル</li>
-            <li>猫用スパ</li>
-            <li>猫用ヨガセッション</li>
-        </ul>
+        <h2>サービス</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="service1.jpg" alt="サービス 1">
+                <h3>猫用ホテル</h3>
+                <p>最高のケアと居心地の良さを提供します。</p>
+            </div>
+            <div class="service-card">
+                <img src="service2.jpg" alt="サービス 2">
+                <h3>スパセッション</h3>
+                <p>プロフェッショナルによるリラクゼーション。</p>
+            </div>
+            <div class="service-card">
+                <img src="service3.jpg" alt="サービス 3">
+                <h3>ヨガセッション</h3>
+                <p>猫と一緒に楽しむ特別な体験。</p>
+            </div>
+        </div>
     </section>
 
-    <section id="prices">
+    <!-- Pricing Section -->
+    <section id="pricing">
         <h2>料金</h2>
         <ul>
-            <li>1泊: 5000円</li>
-            <li>スパ: 3000円</li>
-            <li>ヨガ: 2000円</li>
+            <li>1泊：5000円</li>
+            <li>スパ：3000円</li>
+            <li>ヨガ：2000円</li>
         </ul>
     </section>
 
+    <!-- Reviews Section -->
     <section id="reviews">
-        <h2>お客様の声</h2>
-        <p>「素晴らしいサービス！私の猫が大満足でした。」 - 山田様</p>
-        <p>「快適で安心できる場所です。また利用したいです。」 - 佐藤様</p>
+        <h2>レビュー</h2>
+        <p>「素晴らしいサービス！」 - 山田様</p>
+        <p>「安心して預けられる場所です。」 - 佐藤様</p>
     </section>
 
-    <section id="3d">
-        <h2>3Dモデル</h2>
-        <div id="3d-container"></div>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 日本猫旅館 Nikuchuomachi</p>
+        <p>&copy; 2024 猫旅館 Nikuchuomachi</p>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
