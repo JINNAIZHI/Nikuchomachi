@@ -1,12 +1,2 @@
-// Barba.js 初始化
-barba.init({
-  transitions: [{
-    name: '肉球町',  // 动画名称
-    leave(data) {
-      return gsap.to(data.current.container, { opacity: 0, duration: 1 });
-    },
-    enter(data) {
-      return gsap.from(data.next.container, { opacity: 0, duration: 1 });
-    }
-  }]
-});
+// GSAP 动画，图片加载时出现淡入效果
+gsap.from('.hero-image', { opacity: 0, duration: 2, y: 50 });
