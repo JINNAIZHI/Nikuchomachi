@@ -1,88 +1,24 @@
-/* Reset and basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Navbar styling */
-.navbar {
-    background-color: #fff; /* 背景颜色修改为白色 */
-    padding: 15px 30px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo-image {
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.nav-links li {
-    margin: 0 15px;
-    position: relative;
-}
-
-.nav-links li a {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff6666;
+}
+
+a {
     text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 20px;
+    display: inline-block;
 }
 
-/* Divider between menu items */
-.divider {
-    color: #999;
-    font-size: 16px;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    min-width: 150px;
-}
-
-.dropdown li {
-    padding: 10px;
-}
-
-.dropdown li a {
-    color: #333;
-    font-weight: normal;
-    padding: 10px 15px;
-    display: block;
-    text-decoration: none;
-}
-
-.dropdown li a:hover {
-    background-color: #f4f4f4;
-}
-
-.dropdown-parent:hover .dropdown {
-    display: block;
-}
-
-/* Change the font for a comfortable look */
-body {
-    font-family: 'Noto Sans JP', 'Arial', sans-serif;
+a:hover {
+    color: #0056b3;
 }
