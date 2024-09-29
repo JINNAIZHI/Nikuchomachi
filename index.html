@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>よこそう肉球町へ</title>
+    <title>肉球町ー猫ホテル</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 <body>
+
+    <!-- Top Contact Section -->
+    <div class="top-contact">
+        <p>ご予約お問い合わせ <span>📞 03-5787-2828</span></p>
+    </div>
 
     <!-- Header and Navigation Bar -->
     <header>
@@ -24,8 +28,9 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" class="language-selector">日本語</a>
+                    <a href="javascript:void(0);" class="language-selector">言語</a>
                     <ul class="dropdown">
+                        <li><a href="javascript:void(0);" onclick="setLanguage('ja')">日本語</a></li>
                         <li><a href="javascript:void(0);" onclick="setLanguage('en')">English</a></li>
                         <li><a href="javascript:void(0);" onclick="setLanguage('zh')">中文</a></li>
                     </ul>
@@ -36,7 +41,15 @@
         </nav>
     </header>
 
-    <!-- Image Section with Simple Animation -->
+    <!-- Social Media Links -->
+    <div class="social-media">
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#">BLOG</a>
+        <a href="#">COMPANY INFO</a>
+    </div>
+
+    <!-- Image Section -->
     <section class="hero-section">
         <div class="hero-content">
             <h1>ねこちゃんだけの快適な空間とサービスを</h1>
@@ -44,10 +57,6 @@
         </div>
         <img src="your-image.jpg" alt="猫旅館のイメージ" class="hero-image">
     </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
 
     <script src="script.js"></script>
 </body>
