@@ -1,7 +1,7 @@
 /* 导航栏样式 */
 .navbar {
     background-color: #f3b768;
-    padding: 20px;
+    padding: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,7 @@
 
 .dropdown li {
     padding: 10px 20px;
-    white-space: nowrap; /* 确保文字横向显示，不换行 */
+    white-space: nowrap; 
 }
 
 .dropdown li a {
@@ -50,10 +50,13 @@
     display: block;
     text-decoration: none;
     padding: 5px 10px;
-    transition: color 0.3s ease, font-weight 0.3s ease; /* 设置过渡效果 */
-}
+    transition: color 0.3s ease, font-weight 0.3s ease; 
 
 .dropdown li a:hover {
-    color: #A0525B; /* 鼠标悬停时的字体颜色 */
-    font-weight: bold; /* 鼠标悬停时字体加粗 */
+    color: #A0525B; 
+    font-weight: bold; 
+}
+.dropdown li a:hover {
+    color: #A0525B; 
+    font-weight: bold; 
 }
