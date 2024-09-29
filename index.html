@@ -3,91 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>猫旅館 - Nikuchuomachi</title>
+    <title>猫旅館 - ナビゲーションバー</title>
     <link rel="stylesheet" href="style.css">
-    <!-- SwiperJS for image slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header and Navigation Bar -->
     <header>
         <nav class="navbar">
             <a href="#home" class="logo">猫旅館</a>
             <ul class="nav-links">
-                <li><a href="#about">歴史</a></li>
-                <li><a href="#services">サービス</a></li>
-                <li><a href="#pricing">料金</a></li>
-                <li><a href="#reviews">レビュー</a></li>
+                <li><a href="#story">私たちの物語</a></li>
+                <li><a href="#why-us">私たちを選ぶ理由</a></li>
+                <li>
+                    <a href="#services">サービス</a>
+                    <ul class="dropdown">
+                        <li><a href="#cat-hotel">猫旅館</a></li>
+                        <li><a href="#home-feeding">上门喂养</a></li>
+                    </ul>
+                </li>
+                <li class="language-selector">
+                    <a href="javascript:void(0);" onclick="setLanguage('ja')">日本語</a>
+                    <a href="javascript:void(0);" onclick="setLanguage('en')">English</a>
+                    <a href="javascript:void(0);" onclick="setLanguage('zh')">中文</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section with Image Slider -->
-    <section class="hero">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="your-image1.jpg" alt="Image 1"></div>
-                <div class="swiper-slide"><img src="your-image2.jpg" alt="Image 2"></div>
-                <div class="swiper-slide"><img src="your-image3.jpg" alt="Image 3"></div>
-            </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>歴史</h2>
-        <p>猫旅館は日本の伝統とモダンなサービスを融合し、ペットと飼い主に快適な空間を提供しています。</p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>サービス</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <img src="service1.jpg" alt="サービス 1">
-                <h3>猫用ホテル</h3>
-                <p>最高のケアと居心地の良さを提供します。</p>
-            </div>
-            <div class="service-card">
-                <img src="service2.jpg" alt="サービス 2">
-                <h3>スパセッション</h3>
-                <p>プロフェッショナルによるリラクゼーション。</p>
-            </div>
-            <div class="service-card">
-                <img src="service3.jpg" alt="サービス 3">
-                <h3>ヨガセッション</h3>
-                <p>猫と一緒に楽しむ特別な体験。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing">
-        <h2>料金</h2>
-        <ul>
-            <li>1泊：5000円</li>
-            <li>スパ：3000円</li>
-            <li>ヨガ：2000円</li>
-        </ul>
-    </section>
-
-    <!-- Reviews Section -->
-    <section id="reviews">
-        <h2>レビュー</h2>
-        <p>「素晴らしいサービス！」 - 山田様</p>
-        <p>「安心して預けられる場所です。」 - 佐藤様</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 猫旅館 Nikuchuomachi</p>
-    </footer>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
