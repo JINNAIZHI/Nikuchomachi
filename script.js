@@ -1,13 +1,12 @@
-function setLanguage(lang) {
-    const elements = document.querySelectorAll('[data-lang]');
-    elements.forEach(el => {
-        if (el.getAttribute('data-lang') === lang) {
-            el.style.display = 'block';
-        } else {
-            el.style.display = 'none';
-        }
-    });
-}
-
-// 默认显示日语
-setLanguage('ja');
+// Barba.js 初始化
+barba.init({
+  transitions: [{
+    name: '肉球町',  // 动画名称
+    leave(data) {
+      return gsap.to(data.current.container, { opacity: 0, duration: 1 });
+    },
+    enter(data) {
+      return gsap.from(data.next.container, { opacity: 0, duration: 1 });
+    }
+  }]
+});
