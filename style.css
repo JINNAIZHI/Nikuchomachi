@@ -22,3 +22,42 @@ a {
 a:hover {
     color: #0056b3;
 }
+
+.navbar {
+    background-color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
