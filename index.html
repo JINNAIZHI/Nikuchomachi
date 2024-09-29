@@ -3,42 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>猫旅館 - ナビゲーションバー</title>
+    <title>肉球町 - ページ</title>
     <link rel="stylesheet" href="style.css">
+    <!-- 引入 Barba.js 和 GSAP 库 -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 <body>
 
-    <!-- Header and Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <!-- Logo -->
-            <a href="#home" class="logo">
-                <img src="logo.png" alt="猫旅館のロゴ" class="logo-image">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#story">私たちの物語</a></li>
-                <span class="divider">|</span>
-                <li><a href="#why-us">私たちを選ぶ理由</a></li>
-                <span class="divider">|</span>
-                <li class="dropdown-parent">
-                    <a href="#services">サービス</a>
-                    <ul class="dropdown">
-                        <li><a href="#cat-hotel">猫旅館</a></li>
-                        <li><a href="#home-feeding">上门喂养</a></li>
-                    </ul>
-                </li>
-                <span class="divider">|</span>
-                <li class="dropdown-parent">
-                    <a href="javascript:void(0);">日本語</a>
-                    <ul class="dropdown">
-                        <li><a href="javascript:void(0);" onclick="setLanguage('ja')">日本語</a></li>
-                        <li><a href="javascript:void(0);" onclick="setLanguage('en')">English</a></li>
-                        <li><a href="javascript:void(0);" onclick="setLanguage('zh')">中文</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Barba wrapper -->
+    <div id="barba-wrapper">
+        <div class="barba-container" data-barba="container" data-barba-namespace="home">
+            <h1>肉球町 - ホームページ</h1>
+            <p>ようこそ！ これは肉球町のホームページです。</p>
+            <a href="page2.html">次のページへ</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
