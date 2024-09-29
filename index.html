@@ -1,111 +1,70 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cat Hotel</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .navbar {
-      background-color: #f3b768;
-      padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 0 20px;
-      font-size: 18px;
-    }
-    .navbar a:hover {
-      color: #333;
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: rgba(243, 183, 104, 0.7);
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: white;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-content a:hover {
-      background-color: rgba(255, 255, 255, 0.8);
-      color: #333;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .phone-box {
-      background-color: pink;
-      padding: 10px;
-      border-radius: 50%;
-      display: inline-block;
-      text-align: center;
-    }
-    .phone-box img {
-      width: 30px;
-      height: 30px;
-    }
-    .social-icons {
-      margin-top: 10px;
-    }
-    .social-icons img {
-      width: 24px;
-      height: 24px;
-      margin-left: 10px;
-    }
-  </style>
-</head>
-<body>
-  <div class="navbar">
-    <div class="logo">
-      <a href="#">Logo</a>
-    </div>
-    <div class="menu">
-      <a href="#">私たちの物語</a>
-      <a href="#">私たちを選ぶ理由</a>
-      <div class="dropdown">
-        <a href="#">サービス</a>
-        <div class="dropdown-content">
-          <a href="#">猫ホテル1</a>
-          <a href="#">猫ホテル2</a>
-          <a href="#">上门喂养</a>
+<header class="header hidden-xs">
+    <div class="container clearfix">
+        <div class="header-left">
+            <!-- Logo 区域 -->
+            <h1 class="text-hide">
+                <a href="https://www.necomama.com/">
+                    <img src="https://www.necomama.com/wp-content/themes/necomama-2020/images/logo.png" width="313" height="102" alt="ねこままホテル">
+                </a>
+                ねこままホテル
+            </h1>
         </div>
-      </div>
-      <a href="#">ギャラリー</a>
-      <a href="#">お問い合わせ</a>
+        <!-- /.header-left -->
+        <div class="header-right">
+            <!-- 联系电话区域 -->
+            <div class="header-contact">
+                <p class="header-contact-title">ご予約お問い合わせ</p>
+                <p class="header-contact-num">
+                    <i class="fa fa-phone-square"></i>
+                    <a class="tel" href="tel:0357872828">03-5787-2828</a>
+                </p>
+            </div>
+            <!-- /.header-contact -->
+            <!-- 社交媒体链接 -->
+            <div class="header-links">
+                <a href="https://www.instagram.com/necomamahotel/" target="_blank">
+                    <img src="https://www.necomama.com/wp-content/themes/necomama-2020/images/icon_instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/necomamacafe/" target="_blank">
+                    <img src="https://www.necomama.com/wp-content/themes/necomama-2020/images/icon_facebook.png" alt="Facebook">
+                </a>
+                <a href="http://ameblo.jp/necomamacafe/" target="_blank">BLOG</a> |
+                <a href="http://www.clala-pet.com" target="_blank">COMPANY INFO</a>
+            </div>
+            <!-- /.header-links -->
+        </div>
+        <!-- /.header-right -->
     </div>
-    <div class="contact">
-      <div class="phone-box">
-        <img src="cat-icon.png" alt="Cat Icon">
-        <p>0123-456-789</p>
-      </div>
-      <div class="social-icons">
-        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-      </div>
+    <!-- /.container -->
+</header>
+<nav class="navbar navbar-inverse" role="navigation">
+    <!-- 移动端可见的按钮和Logo -->
+    <div class="navbar-header visible-xs">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="https://www.necomama.com/wp-content/themes/necomama-2020/images/logo-mobile.png" width="133" height="20" alt="ねこままホテル">
+            <h1 class="text-hide">ねこままホテル</h1>
+        </a>
     </div>
-  </div>
-</body>
-</html>
+    <!-- 导航菜单 -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="https://www.necomama.com/"><i class="fa fa-home "></i></a></li>
+            <li><a href="https://www.necomama.com/hotel/">ホテルのご紹介</a></li>
+            <li><a href="https://www.necomama.com/howto/">ご利用方法</a></li>
+            <li><a href="https://www.necomama.com/case/">一日の流れ</a></li>
+            <li><a href="https://www.necomama.com/access/">アクセス</a></li>
+            <li><a href="https://www.necomama.com/photo/">ギャラリー</a></li>
+            <li><a href="https://www.necomama.com/contact/">お問い合わせ</a></li>
+            <li class="visible-xs"><a href="http://ameblo.jp/necomamacafe/" target="_blank">BLOG</a></li>
+            <li class="visible-xs"><a href="http://necomamacafe.shop-pro.jp" target="_blank">SHOPPING</a></li>
+            <li class="visible-xs"><a href="http://www.clala-pet.com" target="_blank">COMPANY INFO</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
 
