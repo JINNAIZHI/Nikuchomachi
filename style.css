@@ -1,35 +1,29 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-    padding: 50px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #ff6666;
-}
-
-a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #007bff;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-.navbar {
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: #fff;
-    padding: 15px 30px;
+    color: #333;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #A0525B; /* 导航栏背景色 */
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
 }
 
 .nav-links {
@@ -44,11 +38,16 @@ a:hover {
 }
 
 .nav-links li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+/* 下拉菜单 */
 .dropdown {
     display: none;
     position: absolute;
@@ -56,8 +55,54 @@ a:hover {
     left: 0;
     background-color: #fff;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
 
-.nav-links li:hover .dropdown {
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a {
+    color: #333;
     display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.dropdown li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Hero Section 样式 */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    background-color: #FDEEEE; /* 背景色 */
+}
+
+.hero-content h1 {
+    color: #A0525B; /* 文字颜色 */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    transition: transform 1s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* 简单的缩放动画效果 */
 }
